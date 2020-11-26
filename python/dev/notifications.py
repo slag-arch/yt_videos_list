@@ -86,6 +86,10 @@ class Common:
     @classmethod
     def format_geckodriver_list(cls, operating_system):
         return [
+            cls.format_driver_information          (operating_system, 'v0.28.0', '≥ 82', 'geckodriver', 'Mozilla Firefox'),
+            cls.format_geckodriver_download_command(operating_system, 'v0.28.0'),
+            cls.format_driver_information          (operating_system, 'v0.27.0', '≥ 78', 'geckodriver', 'Mozilla Firefox'),
+            cls.format_geckodriver_download_command(operating_system, 'v0.27.0'),
             cls.format_driver_information          (operating_system, 'v0.26.0', '≥ 60', 'geckodriver', 'Mozilla Firefox'),
             cls.format_geckodriver_download_command(operating_system, 'v0.26.0')
         ]
@@ -132,6 +136,8 @@ class Common:
     @classmethod
     def format_chromedriver_list(cls, operating_system):
         return [
+            cls.format_driver_information           (operating_system, '87.0.4280.20',  '87', 'chromedriver', 'Google Chrome'),
+            cls.format_chromedriver_download_command(operating_system, '87.0.4280.20'),
             cls.format_driver_information           (operating_system, '86.0.4240.22',  '86', 'chromedriver', 'Google Chrome'),
             cls.format_chromedriver_download_command(operating_system, '86.0.4240.22'),
             cls.format_driver_information           (operating_system, '85.0.4183.87',  '85', 'chromedriver', 'Google Chrome'),

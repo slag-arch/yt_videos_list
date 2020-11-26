@@ -1,18 +1,38 @@
 {
     "firefox": {
         "macos": [
+            "# macos geckodriver v0.28.0 (supports Mozilla Firefox version: \u2265 82)",
+            "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-macos.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n",
+            "# macos geckodriver v0.27.0 (supports Mozilla Firefox version: \u2265 78)",
+            "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-macos.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n",
             "# macos geckodriver v0.26.0 (supports Mozilla Firefox version: \u2265 60)",
             "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-macos.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n"
         ],
         "linux": [
+            "# linux64 geckodriver v0.28.0 (supports Mozilla Firefox version: \u2265 82)",
+            "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-linux64.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n",
+            "# linux64 geckodriver v0.27.0 (supports Mozilla Firefox version: \u2265 78)",
+            "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-linux64.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n",
             "# linux64 geckodriver v0.26.0 (supports Mozilla Firefox version: \u2265 60)",
             "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n",
+            "# linux32 geckodriver v0.28.0 (supports Mozilla Firefox version: \u2265 82)",
+            "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-linux32.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n",
+            "# linux32 geckodriver v0.27.0 (supports Mozilla Firefox version: \u2265 78)",
+            "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-linux32.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n",
             "# linux32 geckodriver v0.26.0 (supports Mozilla Firefox version: \u2265 60)",
             "curl -SL https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux32.tar.gz | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/geckodriver\n"
         ],
         "windows": [
+            "# win32 geckodriver v0.28.0 (supports Mozilla Firefox version: \u2265 82)",
+            "curl -SL --ssl-no-revoke https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-win32.zip -o %CD%:\\Windows\\geckodriver && tar -xzvf %CD%:\\Windows\\geckodriver -C %CD%:\\Windows && del %CD%:\\Windows\\geckodriver\n",
+            "# win32 geckodriver v0.27.0 (supports Mozilla Firefox version: \u2265 78)",
+            "curl -SL --ssl-no-revoke https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-win32.zip -o %CD%:\\Windows\\geckodriver && tar -xzvf %CD%:\\Windows\\geckodriver -C %CD%:\\Windows && del %CD%:\\Windows\\geckodriver\n",
             "# win32 geckodriver v0.26.0 (supports Mozilla Firefox version: \u2265 60)",
             "curl -SL --ssl-no-revoke https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-win32.zip -o %CD%:\\Windows\\geckodriver && tar -xzvf %CD%:\\Windows\\geckodriver -C %CD%:\\Windows && del %CD%:\\Windows\\geckodriver\n",
+            "# win64 geckodriver v0.28.0 (supports Mozilla Firefox version: \u2265 82)",
+            "curl -SL --ssl-no-revoke https://github.com/mozilla/geckodriver/releases/download/v0.28.0/geckodriver-v0.28.0-win64.zip -o %CD%:\\Windows\\geckodriver && tar -xzvf %CD%:\\Windows\\geckodriver -C %CD%:\\Windows && del %CD%:\\Windows\\geckodriver\n",
+            "# win64 geckodriver v0.27.0 (supports Mozilla Firefox version: \u2265 78)",
+            "curl -SL --ssl-no-revoke https://github.com/mozilla/geckodriver/releases/download/v0.27.0/geckodriver-v0.27.0-win64.zip -o %CD%:\\Windows\\geckodriver && tar -xzvf %CD%:\\Windows\\geckodriver -C %CD%:\\Windows && del %CD%:\\Windows\\geckodriver\n",
             "# win64 geckodriver v0.26.0 (supports Mozilla Firefox version: \u2265 60)",
             "curl -SL --ssl-no-revoke https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-win64.zip -o %CD%:\\Windows\\geckodriver && tar -xzvf %CD%:\\Windows\\geckodriver -C %CD%:\\Windows && del %CD%:\\Windows\\geckodriver\n"
         ]
@@ -174,6 +194,8 @@
     },
     "chrome": {
         "macos": [
+            "# mac64 chromedriver 87.0.4280.20 (supports Google Chrome version: 87)",
+            "curl -SL https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_mac64.zip | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/chromedriver\n",
             "# mac64 chromedriver 86.0.4240.22 (supports Google Chrome version: 86)",
             "curl -SL https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_mac64.zip | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/chromedriver\n",
             "# mac64 chromedriver 85.0.4183.87 (supports Google Chrome version: 85)",
@@ -204,6 +226,8 @@
             "curl -SL https://chromedriver.storage.googleapis.com/2.46/chromedriver_mac64.zip | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/chromedriver\n"
         ],
         "linux": [
+            "# linux64 chromedriver 87.0.4280.20 (supports Google Chrome version: 87)",
+            "curl -SL https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_linux64.zip | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/chromedriver\n",
             "# linux64 chromedriver 86.0.4240.22 (supports Google Chrome version: 86)",
             "curl -SL https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_linux64.zip | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/chromedriver\n",
             "# linux64 chromedriver 85.0.4183.87 (supports Google Chrome version: 85)",
@@ -234,6 +258,8 @@
             "curl -SL https://chromedriver.storage.googleapis.com/2.46/chromedriver_linux64.zip | tar -xzvf - -C /usr/local/bin/ && chmod +x /usr/local/bin/chromedriver\n"
         ],
         "windows": [
+            "# win32 chromedriver 87.0.4280.20 (supports Google Chrome version: 87)",
+            "curl -SL --ssl-no-revoke https://chromedriver.storage.googleapis.com/87.0.4280.20/chromedriver_win32.zip -o %CD%:\\Windows\\chromedriver && tar -xzvf %CD%:\\Windows\\chromedriver -C %CD%:\\Windows && del %CD%:\\Windows\\chromedriver\n",
             "# win32 chromedriver 86.0.4240.22 (supports Google Chrome version: 86)",
             "curl -SL --ssl-no-revoke https://chromedriver.storage.googleapis.com/86.0.4240.22/chromedriver_win32.zip -o %CD%:\\Windows\\chromedriver && tar -xzvf %CD%:\\Windows\\chromedriver -C %CD%:\\Windows && del %CD%:\\Windows\\chromedriver\n",
             "# win32 chromedriver 85.0.4183.87 (supports Google Chrome version: 85)",
